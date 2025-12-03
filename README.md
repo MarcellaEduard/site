@@ -93,7 +93,7 @@ Canal de contato
 Interface simples e objetiva
 <img width="390" height="233" alt="img site 1" src="https://github.com/user-attachments/assets/02d24fd4-35f8-4d1a-b7f5-a23548b6812c" />
 <img width="1321" height="601" alt="img site 2" src="https://github.com/user-attachments/assets/3408ff8a-8cbc-4aff-a27b-3559526ae678" />
-<img width="1408" height="736" alt="img site 3" src="https://github.com/user-attachments/assets/b16ea907-86a5-43dd-b805-41fe70db7f0e" />
+<img width="1405" height="481" alt="img site 3" src="https://github.com/user-attachments/assets/7f48e2bc-5c16-4ba8-b477-67bafc00c258" />
 <img width="1405" height="728" alt="img site 4" src="https://github.com/user-attachments/assets/7d07d438-a2be-419f-b7e4-8eddf73e0f6e" />
 <img width="1402" height="718" alt="img site 5" src="https://github.com/user-attachments/assets/15815a0a-104e-49df-9dd5-1ead3053e4bf" />
 <img width="1228" height="738" alt="img site 6" src="https://github.com/user-attachments/assets/6792f430-d1d3-4e14-b391-64d0fc69e153" />
