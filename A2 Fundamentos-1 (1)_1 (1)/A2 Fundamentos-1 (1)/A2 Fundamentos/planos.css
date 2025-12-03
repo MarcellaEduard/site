@@ -1,0 +1,90 @@
+.plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #d5edb9;
+  }
+
+  body {
+    background-color: #fff;
+    font-family: "Arial", sans-serif;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(fundodetela.png);
+    background-repeat: repeat;
+    background-size: 500px;
+  }
+
+
+  .plan-table thead th {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+  }
+  
+  .plan-table tbody td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .plan-header {
+    text-align: center;
+  }
+  
+  .paw-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .plan-header h2 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  .plan-header p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-button,
+  .contact-button {
+    background-color: #a5e1e9;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .contact-button {
+    background-color: #d5edb9;
+  }
+  
+  .contact-button:hover {
+    background-color: #27ae60;
+  }

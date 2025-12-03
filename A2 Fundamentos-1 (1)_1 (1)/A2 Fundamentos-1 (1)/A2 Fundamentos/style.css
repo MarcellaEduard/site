@@ -1,0 +1,383 @@
+body {
+    background-color: #fff;
+    font-family: "Arial", sans-serif;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(fundodetela.png);
+    background-repeat: repeat;
+    background-size: 500px;
+  }
+
+  h1,
+  ul,
+  p {
+    margin: 0px;
+  }
+  
+  .planos-aparecendo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    letter-spacing: 6px;
+    position: relative;
+    padding: 2rem 1rem;
+    opacity: 0;
+    animation: fadeintext 0s 1.1s both;
+  }
+
+  .text-block {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 255, 47, 0.7); /* Cor com transparência */
+    transform: translateX(-100%);
+    animation: enlargeBlock 1.5s ease-in-out forwards, revealBlock 1.5s ease-in-out forwards;
+    animation-delay: 0.5s, 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes enlargeBlock {
+    from{
+      width: 0px;
+    }
+    to{
+      width: 100%;
+    }
+  }
+
+  @keyframes revealBlock {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(100%);
+    }
+
+  }
+
+  @keyframes fadeintext {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  .logo_aparecendo{
+    width: 200px; /* Tamanho do logo */
+    animation: moveLogo 2s infinite alternate;
+}
+
+@keyframes moveLogo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Move para cima */
+    }
+    100% {
+        transform: translateY(0); /* Retorna à posição original */
+    }
+}
+
+
+  }
+  ul {
+    padding: 0px;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .header-bg {
+    background-color:#ADFF2F;
+  }
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .header-menu a {
+    color: #000;
+    display: inline-block;
+    padding: 16px 0px;
+    font-size: 18px;
+  }
+  
+  .introducao-bg {
+    background-color:#E6E6FA;
+    color: #000;
+  }
+  
+  .introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-left: auto;
+  }
+  
+  .introducao-conteudo {
+    align-self: end;
+    padding-bottom: 80px;
+  }
+  
+  .introducao h1 {
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 1.125;
+  }
+  
+  .introducao h1 span {
+    color:#E6E6FA;
+  }
+  
+  .introducao p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000;
+  }
+  
+  .introducao a {
+    display: inline-block;
+    padding: 16px 32px;
+    background:#ADFF2F;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+  }
+  .introducao a:hover {
+    background: linear-gradient(#ecd5e3, #fee1e8);
+  }
+  
+  .lancamentos {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  .lancamentos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .mais-vendidos {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .mais-vendidos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    text-align: center;
+    width: 200px;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+  }
+  
+  .product-item h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .product-item p {
+    font-size: 0.9rem;
+    color: #000;
+  }
+  
+  .product-item .price {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  footer {
+    background-color:#ADFF2F;
+    padding: 40px 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+  
+  footer .footer-logo {
+    text-align: center;
+  }
+  
+  footer .footer-logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-logo p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  footer .footer-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer .footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  footer .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  footer .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer .footer-contact ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  footer .footer-contact ul li i {
+    margin-right: 8px;
+    color: #ffffff;
+  }
+  
+  /* Responsivo para telas menores que 480px */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    gap: 0.625rem; /* 10px */
+    padding: 0.625rem; /* 10px */
+  }
+
+  .header-menu {
+    flex-direction: column;
+    gap: 1.25rem; /* 20px */
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-left: 0.625rem; /* 10px */
+    padding-right: 0.625rem;
+  }
+
+  .introducao h1 {
+    font-size: 1.75rem; /* Aproximadamente 28px */
+  }
+
+  .introducao p {
+    font-size: 1rem; /* Aproximadamente 16px */
+  }
+
+  .introducao a {
+    font-size: 0.875rem; /* Aproximadamente 14px */
+    padding: 0.625em 1.25em; /* Botão menor em telas pequenas */
+  }
+
+  .introducao img {
+    width: 100%; /* Garantir que a imagem ocupe o espaço disponível */
+    height: auto; /* Manter proporção */
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-item {
+    width: 100%;
+    max-width: 18.75rem; /* 300px */
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .footer-column {
+    margin-bottom: 1.25rem; /* 20px */
+  }
+
+  footer .footer-contact ul {
+    text-align: center;
+  }
+}
